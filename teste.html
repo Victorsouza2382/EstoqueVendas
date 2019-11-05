@@ -1,0 +1,93 @@
+<?php
+require_once "classes/conexao.php";
+$obj = new conectar();
+$conexao = $obj->conexao();
+
+$sql = "SELECT * from usuarios where email='admin'";
+$result = mysqli_query($conexao, $sql);
+
+$validar = 0;
+if (mysqli_num_rows($result) > 0) {
+	$validar = 1;
+}
+
+?>
+
+
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <link rel="stylesheet" href="../estoquevendas/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <link rel="stylesheet" href="../EstoqueVendas/css/style.css">
+        <link rel="stylesheet" href="../EstoqueVendas/bootstrap-4.3.1-dist/js/bootstrap.min.js">
+
+    </head>
+    <div class="container">
+        <div class="card card-login mx-auto text-center bg-white">
+            <div class="card-header mx-auto bg-dark">
+                <span> <img src="" class="w-75" alt="Logo"> </span><br />
+            </div>
+            <div class="card-body">
+                <form id="frmLogin">
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="Username">
+                    </div>
+
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" name="senha" id="senha" class="form-control" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                        <input id="entrarSistema" type="submit" name="btn" value="Login" class="btn btn-outline-danger float-right login_btn">
+                    </div>
+                    <?php if(!$validar): ?>
+                    <a href="registrar.php" class="btn btn-danger btn-sm">Registrar</a>
+
+                    <?php 
+							endif;
+							?>
+
+                </form>
+            </div>
+        </div>
+        </body>
+
+    </html>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#entrarSistema').click(function() {
+
+                vazios = validarFormVazio('frmLogin');
+
+                if (vazios > 0) {
+                    alert("Preencha os campos!!");
+                    return false;
+                }
+
+                dados = $('#frmLogin').serialize();
+                $.ajax({
+                    type: "POST",
+                    data: dados,
+                    url: "procedimentos/login/login.php",
+                    success: function(r) {
+                        //alert(r);
+                        if (r == 1) {
+                            window.location = "view/inicio.php";
+                        } else {
+                            alert("Acesso Negado!!");
+                        }
+                    }
+                });
+            });
+        });
+    </script>
