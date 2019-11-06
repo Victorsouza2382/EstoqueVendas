@@ -10,10 +10,10 @@
 <html>
 <head>
 	<title>Início</title>
-	<?php require_once "menu.php" ?>
+	<?php include_once "menu.php" ?>
 </head>
 <body>
-Página inicial
+
 </body>
 </html>
 

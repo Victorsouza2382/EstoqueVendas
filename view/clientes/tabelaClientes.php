@@ -2,7 +2,7 @@
 <?php 
 
 
-require_once "../../classes/conexao.php";
+include_once "../../classes/conexao.php";
 	$c = new conectar();
 		$conexao=$c->conexao();
 

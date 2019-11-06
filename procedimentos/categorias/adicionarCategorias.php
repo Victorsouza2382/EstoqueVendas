@@ -1,8 +1,8 @@
 <?php 
 
 session_start();
-require_once "../../classes/conexao.php";
-require_once "../../classes/categorias.php";
+include_once "../../classes/conexao.php";
+include_once "../../classes/categorias.php";
 
 
 

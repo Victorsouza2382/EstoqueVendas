@@ -3,7 +3,7 @@
 	$obj = new conectar();
 	$conexao = $obj->conexao();
 
-	$sql = "SELECT * from usuarios where email='admin'";
+	$sql = "SELECT * from usuarios where user='admin'";
 	$result = mysqli_query($conexao, $sql);
 
 	$validar = 0;
@@ -44,7 +44,7 @@
 							<input type="password" class="form-control input-sm" name="senha" id="senha">
 							<p></p>
 							<span class="btn btn-primary" id="registro">Registrar</span>
-							<a href="index.php" class="btn btn-default">Voltar Login</a>
+							<a href="index.php" class="btn btn-default">Voltar</a>
 						</form>
 					</div>
 				</div>

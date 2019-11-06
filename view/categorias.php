@@ -9,7 +9,7 @@ if(isset($_SESSION['usuario'])){
 	<html>
 	<head>
 		<title>categorias</title>
-		<?php require_once "menu.php"; ?>
+		<?php  include_once "menu.php"; ?>
 	</head>
 	<body>
 
@@ -30,7 +30,7 @@ if(isset($_SESSION['usuario'])){
 			</div>
 		</div>
 
-		<!-- Button trigger modal -->
+		
 
 		<!-- Modal -->
 		<div class="modal fade" id="atualizaCategoria" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

@@ -19,12 +19,13 @@
 <html>
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
-	<script src="lib/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/bootstrap/css/bootstrap.css">
+	<script src="style/jquery-3.2.1.min.js"></script>
 	<script src="js/funcoes.js"></script>
 	<link rel="stylesheet" href="../EstoqueVendas/css/style.css">
 </head>
 <body>
+	<center>
 	<div class="card" style="width: 18rem;">
         <div class="card-body">
 <form id="frmLogin">
@@ -48,7 +49,7 @@
   
   </div>
       </div>
-  
+	  </center>
  
 </body>
 </html>

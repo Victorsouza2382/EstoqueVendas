@@ -9,7 +9,7 @@ if(isset($_SESSION['usuario'])){
 	<html>
 	<head>
 		<title>clientes</title>
-		<?php require_once "menu.php"; ?>
+		<?php include_once "menu.php"; ?>
 	</head>
 	<body>
 		<div class="container">
