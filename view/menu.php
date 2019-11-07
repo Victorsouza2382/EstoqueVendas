@@ -13,7 +13,8 @@
     <div class="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="100">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="inicio.php"><img class="img-responsive logo img-thumbnail" src="../img/18148.png" alt="" width="130px" height="100px"></a>
+          <a class="navbar-brand" href="inicio.php"><img class="img-responsive logo img-thumbnail" src="../img/natan.jpg" alt="" width="100px" height="100px"></a>
+          
         </div>
         <div id="navbar" class="collapse navbar-collapse">
 
@@ -31,15 +32,14 @@
               <li><a href="produtos.php">Produtos</a></li>
             </ul>
           </li>
-
-
-       
-
-
-           <li><a href="clientes.php"><span></span> Clientes</a>
-          </li>
-          <li><a href="#"><span></span> Menu 3</a>
-          </li>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span ></span> Pessoas <span></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="clientes.php">Clientes</a></li>
+                      <li><a href="fornecedores.php">Fornecedores</a></li>
+                  </ul>
+              </li>
           
           <li class="dropdown" >
             <a href="usuarios.php" style="color: red"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span></span>Usuário<span></span></a>

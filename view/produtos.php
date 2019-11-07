@@ -9,8 +9,8 @@ if(isset($_SESSION['usuario'])){
 	<html>
 	<head>
 		<title>produtos</title>
-		<?php include_once "menu.php"; ?>
-		<?php include_once "../classes/conexao.php"; 
+		<?php require_once "menu.php"; ?>
+		<?php require_once "../classes/conexao.php"; 
 		$c= new conectar();
 		$conexao=$c->conexao();
 		$sql="SELECT id_categoria,nome_categoria

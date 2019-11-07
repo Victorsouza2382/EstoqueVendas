@@ -13,7 +13,7 @@ include_once "../../classes/conexao.php";
 
 
 <table class="table table-hover table-condensed table-bordered" style="text-align: center;">
-	<caption><label>Categorias :D</label></caption>
+	<caption><label>Categorias</label></caption>
 	<tr>
 		<td>Categoria</td>
 		<td>Editar</td>
