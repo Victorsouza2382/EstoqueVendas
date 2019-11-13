@@ -23,33 +23,43 @@ if (mysqli_num_rows($result) > 0) {
     <script src="js/funcoes.js"></script>
     <link rel="stylesheet" href="../EstoqueVendas/css/style.css">
 </head>
-<body>
-<center>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <form id="frmLogin">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">User</label>
-                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp"
-                           placeholder="Enter email">
+<body style="background-color: gray">
+<br><br><br><br><br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <center>
+                <div class="panel panel-primary">
+                    <div class="panel panel-heading">Fazer Login</div>
+                    <div class="panel panel-body">
+                        <form id="frmLogin">
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email"
+                                       aria-describedby="emailHelp"
+                                       placeholder="Usuário">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
+                            </div>
+
+                            <button type="submit" id="entrarSistema" class="btn btn-success">Entrar</button>
+                            <?php if (!$validar): ?>
+                                <a href="registrar.php" class="btn btn-primary btn-sm">Registrar</a>
+
+                            <?php
+                            endif;
+                            ?>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Senha</label>
-                    <input type="password" class="form-control" name="senha" id="senha" placeholder="Password">
-                </div>
-
-                <button type="submit" id="entrarSistema" class="btn btn-primary">Entrar</button>
-                <?php if (!$validar): ?>
-                    <a href="registrar.php" class="btn btn-danger btn-sm">Registrar</a>
-
-                <?php
-                endif;
-                ?>
-            </form>
-
+            </center>
         </div>
     </div>
-</center>
+</div>
+
 
 </body>
 </html>

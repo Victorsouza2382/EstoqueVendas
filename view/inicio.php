@@ -10,8 +10,12 @@ if (isset($_SESSION['usuario'])) {
     <head>
         <title>Início</title>
         <?php include_once "menu.php" ?>
+        <link rel="stylesheet" href="../css/myInfo.css">
     </head>
     <body>
+    <div id="myInfo1">
+        <img src="../img/myInfo.jpg">
+    </div>
 
     </body>
     </html>

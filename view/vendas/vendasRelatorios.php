@@ -49,13 +49,13 @@ $result = mysqli_query($conexao, $sql);
                         </td>
                         <td>
                             <a href="../procedimentos/vendas/criarComprovantePdf.php?idvenda=<?php echo $ver[0] ?>"
-                               class="btn btn-danger btn-sm">
+                               class="btn btn-success btn-sm">
                                 Comprovante <span class="glyphicon glyphicon-list-alt"></span>
                             </a>
                         </td>
                         <td>
                             <a href="../procedimentos/vendas/criarRelatorioPdf.php?idvenda=<?php echo $ver[0] ?>"
-                               class="btn btn-danger btn-sm">
+                               class="btn btn-success btn-sm">
                                 Relatório <span class="glyphicon glyphicon-file"></span>
                             </a>
                         </td>

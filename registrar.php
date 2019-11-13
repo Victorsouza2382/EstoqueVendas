@@ -18,7 +18,7 @@ if (mysqli_num_rows($result) > 0) {
 <html>
 <head>
     <title>Registrar Usuário</title>
-    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap/css/bootstrap.css">
     <script src="lib/jquery-3.2.1.min.js"></script>
     <script src="js/funcoes.js"></script>
 
@@ -30,8 +30,10 @@ if (mysqli_num_rows($result) > 0) {
     <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
-            <div class="panel panel-danger">
-                <div class="panel panel-heading">Registrar Administrador</div>
+
+            <div class="panel panel-success">
+
+                <div class="panel panel-heading" style="text-align: center">Registrar Administrador</div>
                 <div class="panel panel-body">
                     <form id="frmRegistro">
                         <label>Nome</label>
@@ -78,6 +80,7 @@ if (mysqli_num_rows($result) > 0) {
 
                     if (r == 1) {
                         alert("Inserido com Sucesso!!");
+                        window.location.href = "view/inicio.php";
                     } else {
                         alert("Erro ao Inserir");
                     }

@@ -45,8 +45,6 @@ $conexao = $c->conexao();
             <input readonly="" type="text" class="form-control input-sm" id="precoV" name="precoV">
             <label>Quantidade Vendida</label>
             <input type="text" class="form-control input-sm" id="quantV" name="quantV">
-            <label>Quantidade Vendida</label>
-            <input type="text" class="form-control input-sm" id="quantV" name="quantV">
             <p></p>
             <span class="btn btn-primary" id="btnAddVenda">Adicionar</span>
             <span class="btn btn-danger" id="btnLimparVendas">Limpar Venda</span>

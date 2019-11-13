@@ -29,7 +29,7 @@ class usuarios
 
         $result = mysqli_query($conexao, $sql);
 
-        //echo $sql;
+
 
         if (mysqli_num_rows($result) > 0) {
             return 1;

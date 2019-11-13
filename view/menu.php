@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <script src="https://kit.fontawesome.com/778c80b037.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -13,7 +13,7 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="inicio.php"><img class="img-responsive logo img-thumbnail"
-                                                               src="../img/natan.jpg" alt="" width="100px"
+                                                               src="../img/DevVictor.jpg" alt="" width="180px"
                                                                height="100px"></a>
 
             </div>
@@ -21,14 +21,14 @@
 
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li class="active"><a href="inicio.php"><span></span> Inicio</a>
+                    <li><a href="inicio.php"> <i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
                     </li>
 
 
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false"><span></span> Gestão Produtos <span></span></a>
+                           aria-expanded="false"><span></span> Gestão Produtos <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="categorias.php">Categorias</a></li>
                             <li><a href="produtos.php">Produtos</a></li>
@@ -37,7 +37,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false"><span></span> Pessoas <span></span></a>
+                           aria-expanded="false"><span></span> Pessoas <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="clientes.php">Clientes</a></li>
                             <?php if ($_SESSION['usuario'] == "admin"): ?>
@@ -46,14 +46,13 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="vendas.php"><span class=""></span>Vendas
-                        </a>
+                        <a href="vendas.php"><span class=""></span>Vendas <i class="fa fa-usd" aria-hidden="true"></i> </a>
                     </li>
 
                     <li class="dropdown">
-                        <a href="usuarios.php" style="color: red" class="dropdown-toggle" data-toggle="dropdown"
+                        <a href="usuarios.php" style="color: deepskyblue" class="dropdown-toggle" data-toggle="dropdown"
                            role="button" aria-haspopup="true"
-                           aria-expanded="false"><span></span>Usuário<span></span></a>
+                           aria-expanded="false"> <i class="fa fa-user" aria-hidden="true"></i> Usuário </a>
                         <ul class="dropdown-menu">
                             <?php if ($_SESSION['usuario'] == "admin"): ?>
                                 <li><a href="usuarios.php"><span></span>Gestão de Usuários</a></li>

@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="../style/select2/css/select2.css">
 <link rel="stylesheet" type="text/css" href="../css/menu.css">
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/778c80b037.js" crossorigin="anonymous"></script>
 
 
 <script src="../style/jquery-3.2.1.min.js"></script>

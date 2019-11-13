@@ -33,7 +33,7 @@ $idcliente = $ver[2];
 
 <link rel="stylesheet" type="text/css" href="../../style/bootstrap/css/bootstrap.css">
 
-<img src="../../img/natan.jpg" width="200" height="120">
+<img src="../../img/DevVictor.jpg" width="200" height="120">
 <br>
 <table class="table">
     <tr>
