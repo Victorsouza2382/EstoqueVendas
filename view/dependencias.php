@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 
-
 <script src="../style/jquery-3.2.1.min.js"></script>
 <script src="../style/alertifyjs/alertify.js"></script>
 <script src="../style/bootstrap/js/bootstrap.js"></script>

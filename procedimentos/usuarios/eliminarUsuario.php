@@ -1,10 +1,10 @@
-<?php 
+<?php
 
-	include_once "../../classes/conexao.php";
-	include_once "../../classes/usuarios.php";
+include_once "../../classes/conexao.php";
+include_once "../../classes/usuarios.php";
 
-	$obj= new usuarios;
+$obj = new usuarios;
 
-	echo $obj->excluir($_POST['idusuario']);
+echo $obj->excluir($_POST['idusuario']);
 
- ?>
+?>

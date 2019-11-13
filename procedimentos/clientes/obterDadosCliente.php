@@ -1,7 +1,7 @@
-<?php 
+<?php
 
-require_once "../../classes/conexao.php";
-require_once "../../classes/clientes.php";
+include_once "../../classes/conexao.php";
+include_once "../../classes/clientes.php";
 
 
 $obj = new clientes();
@@ -9,5 +9,5 @@ $obj = new clientes();
 echo json_encode($obj->obterDadosCliente($_POST['idcliente']));
 
 
- ?>
+?>
 

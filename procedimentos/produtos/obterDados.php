@@ -1,12 +1,12 @@
-<?php 
-	
-	require_once "../../classes/conexao.php";
-	require_once "../../classes/produtos.php";
+<?php
 
-	$obj= new produtos();
+include_once "../../classes/conexao.php";
+include_once "../../classes/produtos.php";
 
-	$idpro=$_POST['idpro'];
+$obj = new produtos();
 
-	echo json_encode($obj->obterDados($idpro));
+$idpro = $_POST['idpro'];
 
-	?>
+echo json_encode($obj->obterDados($idpro));
+
+?>

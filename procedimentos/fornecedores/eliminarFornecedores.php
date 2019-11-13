@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 
-require_once "../../classes/conexao.php";
-require_once "../../classes/fornecedores.php";
+include_once "../../classes/conexao.php";
+include_once "../../classes/fornecedores.php";
 
 $id = $_POST['idfornecedor'];
 
