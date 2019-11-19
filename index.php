@@ -28,7 +28,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4"></div>
+        <di class="col-sm-4"></di>
         <div class="col-sm-4">
             <center>
                 <div class="panel panel-primary">
