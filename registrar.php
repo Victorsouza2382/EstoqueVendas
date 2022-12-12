@@ -1,6 +1,8 @@
 <?php
 include_once "classes/conexao.php";
 $obj = new conectar();
+
+
 $conexao = $obj->conexao();
 
 $sql = "SELECT * from usuarios where user='admin'";
