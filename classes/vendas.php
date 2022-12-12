@@ -98,7 +98,7 @@ class vendas
         $conexao = $c->conexao();
 
 
-        $sql = "SELECT sobrenome,nome 
+        $sql = "SELECT nome, sobrenome 
 			from clientes 
 			where id_cliente='$idCliente'";
         $result = mysqli_query($conexao, $sql);

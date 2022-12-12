@@ -27,7 +27,6 @@ $result = mysqli_query($conexao, $sql);
                     <td>Cliente</td>
                     <td>Total da Compra</td>
                     <td>Comprovante</td>
-                    <td>Relatório</td>
                 </tr>
                 <?php while ($ver = mysqli_fetch_row($result)): ?>
                     <tr>
@@ -53,12 +52,7 @@ $result = mysqli_query($conexao, $sql);
                                 Comprovante <span class="glyphicon glyphicon-list-alt"></span>
                             </a>
                         </td>
-                        <td>
-                            <a href="../procedimentos/vendas/criarRelatorioPdf.php?idvenda=<?php echo $ver[0] ?>"
-                               class="btn btn-success btn-sm">
-                                Relatório <span class="glyphicon glyphicon-file"></span>
-                            </a>
-                        </td>
+                        
                     </tr>
                 <?php endwhile; ?>
             </table>

@@ -38,7 +38,7 @@ if (mysqli_num_rows($result) > 0) {
                             <div class="form-group">
                                 <input type="email" class="form-control" name="email" id="email"
                                        aria-describedby="emailHelp"
-                                       placeholder="Usuário">
+                                       placeholder="Email">
                             </div>
                             <br>
                             <div class="form-group">

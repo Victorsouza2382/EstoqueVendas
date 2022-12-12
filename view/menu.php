@@ -12,10 +12,8 @@
     <div class="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="100">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="inicio.php"><img class="img-responsive logo img-thumbnail"
-                                                               src="../img/DevVictor.jpg" alt="" width="180px"
-                                                               height="100px"></a>
-
+              
+                <a class="navbar-brand" href="inicio.php"><img class="img-responsive logo img-thumbnail" src="../img/Puc.jpg" alt="" width="200px" height="150px"></a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
 

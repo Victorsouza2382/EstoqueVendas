@@ -10,12 +10,31 @@ if (isset($_SESSION['usuario'])) {
     <head>
         <title>Início</title>
         <?php include_once "menu.php" ?>
-        <link rel="stylesheet" href="../css/myInfo.css">
+        <link rel="stylesheet" href="../EstoqueVendas/css/style.css">
+
     </head>
     <body>
     <div id="myInfo1">
-        <img src="../img/myInfo.jpg">
+        
     </div>
+
+    <div id="vendasFeitas">
+           <script type="text/javascript">
+		$(document).ready(function(){
+
+				
+				$('#vendasFeitas').load('vendas/vendasRelatorios.php');
+				
+				$('#vendasFeitas').show();
+				
+		});
+
+		
+
+	</script>
+    </div>
+
+    
 
     </body>
     </html>
@@ -27,3 +46,4 @@ if (isset($_SESSION['usuario'])) {
 }
 
 ?>
+
