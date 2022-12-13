@@ -8,6 +8,7 @@ function validarFormVazio(formulario) {
             vazios++;
 
 
+
         }
     }
     return vazios;

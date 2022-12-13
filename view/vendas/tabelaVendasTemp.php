@@ -36,10 +36,13 @@ session_start();
                 <td><?php echo $d[2] ?></td>
                 <td><?php echo "R$ " . $d[3] . ",00" ?></td>
                 <td><?php echo $d[6]; ?></td>
+
                 <td>
 
  			
 
+
+                
  			<span class="btn btn-danger btn-xs"
                   onclick="fecharP('<?php echo $i; ?>'), editarP('<?php echo $d[0]; ?>, <?php echo $d[5]; ?>')">
  				<span class="glyphicon glyphicon-remove"></span>

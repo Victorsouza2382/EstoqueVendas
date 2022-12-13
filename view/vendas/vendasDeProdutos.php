@@ -183,5 +183,6 @@ $conexao = $c->conexao();
         $('#clienteVenda').select2();
         $('#produtoVenda').select2();
 
+        
     });
 </script>
