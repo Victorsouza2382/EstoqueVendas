@@ -8,7 +8,7 @@ $result = mysqli_query($conexao, $sql);
 
 $validar = 0;
 if (mysqli_num_rows($result) > 0) {
-    $validar = 1;
+  $validar = 1;
 }
 
 ?>
@@ -55,11 +55,11 @@ if (mysqli_num_rows($result) > 0) {
                   </div>
 
                   <button type="submit" id="entrarSistema" class="btn btn-success">Entrar</button>
-                  <?php if (!$validar): ?>
+                  <?php if (!$validar) : ?>
 
                   <?php
-                            endif;
-                            ?>
+                  endif;
+                  ?>
                 </form>
               </div>
               <P>Sistema para conclusão de curso</P>
@@ -94,6 +94,7 @@ $(document).ready(function() {
       success: function(r) {
         //alert(r);
         if (r == 1) {
+
           window.location = "view/inicio.php";
         } else {
           alert("Acesso Negado!!");
